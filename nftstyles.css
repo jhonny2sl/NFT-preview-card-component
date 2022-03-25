@@ -1,0 +1,129 @@
+* {
+    color:hsl(0, 0%, 100%);
+}
+
+body {
+    background: hsl(217, 54%, 11%);
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.125em;
+}
+
+.container {
+    background: hsl(216, 50%, 16%);
+    border-radius: 1.5em;
+    margin: 3.875rem auto;
+    padding: 1.5em;
+    width: 20.4375rem;
+    position: relative;
+}
+
+img, .equilibrium-highlight {
+    border-radius: 0.75em;
+    width: 20.5rem;
+    height: 20.5rem;
+}
+
+.avatar {
+    border: 0.125em solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 2.125em; 
+    height: 2.125em;
+    margin-top: 0.4375em;
+}
+
+.equilibrium-wrapper {
+    position: relative;
+}
+
+.equilibrium{
+    position: relative;
+    z-index: 1;
+}
+
+.equilibrium-highlight {
+    background: hsla(178, 100%, 50%, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.25s ease-out;
+}
+
+.equilibrium-wrapper:hover .equilibrium-highlight:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in;
+}
+
+.eye {
+    width: 3.75em;
+    height: 3.75em;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.caption{
+    display: block;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+a:hover {
+    color:hsl(178, 100%, 50%);
+}
+
+p, .timeleft {
+    color: hsl(215, 51%, 70%);
+}
+
+.creation {
+    display: inline-block;
+    position: absolute;
+    left: 90px;
+}
+
+.description {
+    font-weight: 300;
+    line-height: 1.875em;
+}
+
+.balance, .timeleft {
+    margin: 0 0 0.5625em;
+}
+
+.balance {
+    color: hsl(178, 100%, 50%);
+    display: inline-block;
+    font-weight: 600;
+    position: relative;
+    left: 0.4375em;
+}
+
+.balance::before {
+    content: url("./images/icon-ethereum.svg");
+    position: relative;
+    top: 0.125em;
+    left: -0.4375em;
+}
+
+.timeleft {
+    float: right;
+}
+
+.timeleft::before {
+    content: url("./images/icon-clock.svg");
+    position: relative;
+    top: 0.125em;
+    left: -0.5625em;
+}
+
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+}
