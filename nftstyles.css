@@ -6,7 +6,7 @@ body {
     background: hsl(217, 54%, 11%);
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
-    font-size: 1.125em;
+    font-size: 1.125rem;
 }
 
 .container {
@@ -89,6 +89,10 @@ p, .timeleft {
     left: 90px;
 }
 
+h1 {
+    font-size: 1.125rem;
+}
+
 .description {
     font-weight: 300;
     line-height: 1.875em;
@@ -126,4 +130,10 @@ p, .timeleft {
 
 hr {
     border: 1px solid hsl(215, 32%, 27%);
+}
+
+@media screen and (min-width: 535px){
+    .container {
+        margin: 9.5rem auto;
+    }
 }
